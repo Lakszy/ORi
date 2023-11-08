@@ -39,7 +39,7 @@ function GridCreation({ imagesData }) {
       <Grid container spacing={2}>
         {photo &&
           photo.map((img) => (
-            <Grid item xs={4} key={img.id}>
+            <Grid item xs={12} sm={6} md={4} lg={3} key={img.id}>
               <Paper
                 className="cursor-pointer p-4 border rounded-lg transition-transform transform hover:scale-105"
                 onClick={() => handleOpenModal(img)}
